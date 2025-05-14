@@ -12,6 +12,7 @@
 - [Features](#features)
 - [Safety Settings](#safety-settings)
 - [License](#license)
+- [Contributing](#contributing)
 
 ---
 
@@ -19,33 +20,33 @@
 
 ### 1. Clone the Repository
 
-```bash
 git clone https://github.com/your-repo/lyfehub.git
 cd lyfehub
 
-## 🔧 Installation
 
 ### 2. Install Dependencies
 
 Ensure you have **Python 3.8+** installed, then run:
-
-```bash
 pip install -r requirements.txt
 
-### 🔑 API Key Configuration
+
+### 3. API Key Configuration
 
 - Obtain an API key from **Google Generative AI**.
 - Create a file named `api_key.py` in the root directory and add the following:
 
-```python
 api_key = "YOUR_API_KEY"
+
+
+---
 
 ## 🚀 Usage
 
 ### ▶️ Run the Application
 
-```bash
 streamlit run app.py
+
+
 ### 🧭 Using the Interface
 
 1. Open the provided Streamlit URL in your browser.
@@ -79,22 +80,28 @@ streamlit run app.py
 
 To ensure responsible AI usage, the following safety thresholds are enforced:
 
-```python
 safety_settings = [
-    {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
-    {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
-    {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
-    {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+{"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+{"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+{"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
+{"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
 ]
 
+
+---
+
 ## 📄 License
-This project is licensed under the MIT License.
+
+This project is licensed under the MIT License.  
 See the LICENSE file for details.
 
+---
+
 ## 🤝 Contributing
-We welcome contributions and feedback!
+
+We welcome contributions and feedback!  
 For bug reports, feature requests, or improvements, please visit the GitHub repository.
 
-Thank you for using LyfeHub.
-We hope this tool helps in delivering efficient and accurate medical insights.
+Thank you for using LyfeHub.  
+We hope this tool helps in delivering efficient and accurate medical insights.  
 Stay healthy and informed! 🩺
