@@ -22,3 +22,12 @@
 ```bash
 git clone https://github.com/your-repo/lyfehub.git
 cd lyfehub
+
+## 🔧 Installation
+
+### 2. Install Dependencies
+
+Ensure you have **Python 3.8+** installed, then run:
+
+```bash
+pip install -r requirements.txt
