@@ -20,23 +20,26 @@
 
 ### 1. Clone the Repository
 
+```bash
 git clone https://github.com/your-repo/lyfehub.git
 cd lyfehub
-
+```
 
 ### 2. Install Dependencies
 
 Ensure you have **Python 3.8+** installed, then run:
+```bash
 pip install -r requirements.txt
-
+```
 
 ### 3. API Key Configuration
 
 - Obtain an API key from **Google Generative AI**.
 - Create a file named `api_key.py` in the root directory and add the following:
 
+```bash
 api_key = "YOUR_API_KEY"
-
+```
 
 ---
 
@@ -44,8 +47,9 @@ api_key = "YOUR_API_KEY"
 
 ### ▶️ Run the Application
 
+```bash
 streamlit run app.py
-
+```
 
 ### 🧭 Using the Interface
 
@@ -80,13 +84,14 @@ streamlit run app.py
 
 To ensure responsible AI usage, the following safety thresholds are enforced:
 
+```bash
 safety_settings = [
 {"category": "HARM_CATEGORY_HARASSMENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
 {"category": "HARM_CATEGORY_HATE_SPEECH", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
 {"category": "HARM_CATEGORY_SEXUALLY_EXPLICIT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
 {"category": "HARM_CATEGORY_DANGEROUS_CONTENT", "threshold": "BLOCK_MEDIUM_AND_ABOVE"},
 ]
-
+```
 
 ---
 
